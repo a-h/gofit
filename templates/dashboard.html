@@ -1,0 +1,23 @@
+{{template "header"}}
+    <div class="container">
+        <h1>Fitness Data</h1>
+
+        <table>
+            <tr>
+                <td>
+        <div id="canvas-holder" style="width : 300px; height : 200px; float : left;">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+</td>
+<td>
+        <div id="canvas-holder-calories" style="width : 300px; height : 200px;">
+            <canvas id="caloriesChart" width="400" height="400"></canvas>
+        </div>
+</td>
+</tr>
+</table>
+        <script type="text/javascript">
+            showFitnessData();
+        </script>
+    </div>
+{{template "footer"}}
