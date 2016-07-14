@@ -60,3 +60,47 @@ curl --header "Authorization: Bearer ya29.sdjasdhhjasdghjasgdhjdr5dsadaksdghajs"
 ```
 
 Note: You won't have a "session" unless you've manually clicked "add" in the Google fit application.
+
+# The Data
+
+The `datahandler.go` file is the rest endpoint that returns JSON data. The form is:
+
+```
+{
+    "startDate":"2016-07-01T10:54:35.565852368+01:00",
+    "days":7,
+    "steps":[
+        1026,
+        5146,
+        4264,
+        4896,
+        7923,
+        10378,
+        5874
+    ],
+    "weight":[
+        83,
+        83,
+        83
+    ],
+    "height":null,
+    "caloriesExpendedOnActivities":[
+        1629.9945068359375,
+        1773.43798828125,
+        2031.5050048828125,
+        1995.6978759765625,
+        2105.984619140625,
+        2403.6982421875,
+        1983.80810546875
+    ],
+    "caloriesExpendedOnBMR":[
+        327.47686767578125,
+        105.46992492675781,
+        75.08860778808594,
+        47.90279006958008,
+        14.623250007629395,
+        35.55097579956055,
+        40.21820068359375
+    ]
+}
+```
